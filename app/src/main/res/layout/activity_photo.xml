@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".photo.PhotoActivity">
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:id="@+id/image_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/select_image"
+        android:src="@drawable/image_model"/>
+
+    <Button
+        android:id="@+id/image_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+
+        android:text="@string/select_button"
+        android:padding="10dp"
+        android:layout_margin="8dp"/>
+
+
+
+
+</LinearLayout>

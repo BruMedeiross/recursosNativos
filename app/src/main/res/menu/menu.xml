@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_menu"
+        android:title="@string/contact_menu"/>
+
+    <item android:id="@+id/item_menu2"
+        android:title="@string/calendar"/>
+
+    <item android:id="@+id/item_menu3"
+        android:title="@string/photo"/>
+
+    <item android:id="@+id/item_menu4"
+        android:title="@string/camera"/>
+
+    <item android:id="@+id/item_menu5"
+        android:title="@string/localizacao"/>
+
+    <item android:id="@+id/item_menu6"
+        android:title="@string/watch"/>
+
+</menu>

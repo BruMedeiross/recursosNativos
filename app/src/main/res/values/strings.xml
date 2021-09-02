@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Recursos Nativos</string>
+    <string name="set_event">Inserir Evento</string>
+    <string name="select_image">Selecione uma imagem</string>
+    <string name="select_button">Selecione uma imagem</string>
+    <string name="select_camera">Tire uma foto</string>
+    <string name="contact_menu">Contatos </string>
+    <string name="calendar">Agenda </string>
+    <string name="photo">Fotos </string>
+    <string name="camera">Câmera </string>
+    <string name="localizacao">Maps </string>
+    <string name="watch">Relógio </string>
+    <string name="title_activity_maps">Mapas</string>
+
+</resources>
