@@ -53,7 +53,7 @@ class ContactActivity : AppCompatActivity() {
     }
 
     private fun setContacts() {
-        //lista de contatos
+        //lista de contatoss
         val contactList: ArrayList<Contact> = ArrayList()
                                             //conteiner dos dados comuns dos contatos do telefone
         val cursor = contentResolver.query(
