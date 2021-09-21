@@ -4,21 +4,20 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
-import android.provider.ContactsContract.CommonDataKinds.StructuredName.DISPLAY_NAME
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bms.agendabootcamp.Camera.CameraActivity
 import com.bms.agendabootcamp.Maps.MapsActivity
-import com.bms.agendabootcamp.agenda.MainActivity
 import com.bms.agendabootcamp.R
+import com.bms.agendabootcamp.agenda.MainActivity
 import com.bms.agendabootcamp.photo.PhotoActivity
 
 
@@ -57,11 +56,13 @@ class ContactActivity : AppCompatActivity() {
         //lista de contatos
         val contactList: ArrayList<Contact> = ArrayList()
                                             //conteiner dos dados comuns dos contatos do telefone
-        val cursor = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
-                null,
-                null,
-                null,
-                DISPLAY_NAME)
+        val cursor = contentResolver.query(
+            ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+            null,
+            null,
+            null,
+            "display_name"
+        )
 
         if (cursor != null) {
             //se o cursor não for vazio, adicione a lista Contact (string name, string phone)

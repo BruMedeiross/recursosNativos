@@ -178,8 +178,8 @@ class MapsActivity : AppCompatActivity(),
 
         locationRequest = LocationRequest()
 
+        //velocidade, velocidade +rapida e prioridade do recebeimento de dados(ver teste)
         locationRequest.interval = 10000
-
         locationRequest.fastestInterval=5000
         locationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
 
